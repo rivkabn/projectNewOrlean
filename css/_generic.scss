@@ -1,0 +1,28 @@
+/* footer styling */
+footer {
+    // margin-left: calc(50% - 240px);
+    padding: 20px 10px;
+    background-color: rgb(250, 164, 3);
+    border-radius: 10px;
+    border: 3px rgb(245, 13, 121) dashed;
+    border-radius: 10px 10px 0 0;
+    // width: 480px;
+
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+
+//import of Henny Penny and Pattaya
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto&display=swap');
+// font-family: 'Henny Penny', cursive;
+//font-family: 'Pattaya', sans-serif;
+//font-family: 'Roboto', sans-serif;
+@media (min-width: 768px) {
+
+footer {
+    margin-left: calc(50% - 240px);
+    width: 480px;
+}}

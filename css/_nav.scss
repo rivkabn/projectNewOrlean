@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.home-bg-color {
+    background-color: $color2;
+}
+
+.about-bg-color {
+    background-color: $color3;
+}
+
+.media-bg-color {
+    background-color: $color4;
+}
+
+.faq-bg-color {
+    background-color: $color5;
+
+}
+
+.contact-bg-color {
+    background-color: $color1;
+
+}
+
+@mixin title($color) {
+    background-color: $color;
+    text-align: center;
+
+}
+
+.title-index {
+    @include title($color1)
+}
+
+.title-about {
+    @include title($color4)
+}
+
+
+.title-media {
+    @include title($color3)
+}
+
+.title-faq {
+    @include title($color4)
+}
+
+.title-contact {
+    @include title($color5);
+color:$color4;
+}
+
+body {
+    background-color: $color1
+}
+
+.nav-col1 li {
+    background-color: $color1;
+}
+
+//style that mach all the pages
+
+//nav style
+
+/*.navbar-custom .navbar-brand,
+        .navbar-custom .navbar-text {
+            color: green;
+        }*/
+// modify nav background-color
+// .navbar-nav > li{
+//     padding-left:30px;
+//     padding-right:30px;
+//   }
+
+
+// .navbar{
+//     justify-content: space-evenly;
+// }
+// .navbar-nav {
+//     float:none;
+//     margin:0 auto;
+//     display: block;
+// justify-content: space-evenly;
+// }
+
+// .navbar-nav > li {
+//     display: inline-block;
+//     float:none;
+// }
+.navnar {
+    z-index: 6;
+}
+ul{
+width: 100%;
+}
+.navbar-custom {
+    z-index: 5;
+    // transform: rotate(3deg);
+    // background-color: green;work
+    font-weight: 900;
+    // font-size: 1.5rem;
+    font-size: calc(100% + 1vw + 1vh);
+    border-bottom: 2px solid $color2;
+    // outline: 2px solid $color3;
+    background-image: repeating-linear-gradient(40DEG, $color1, $color2, $color3, $color4, $color5);
+}
+
+.navbar-custom li {
+    // transform: rotate(-14deg);
+    background-color: $color1;
+    // border-radius: 14px;
+    // padding: 10px;
+    // margin: 12px;
+    display: block;
+
+}
+@media (min-width: 992px) {
+.navbar-custom li {
+    transform: rotate(-14deg);
+}
+.navbar-custom li {
+    transform: rotate(-14deg);
+    // background-color: $color1;
+    border-radius: 14px;
+    padding: 10px;
+    margin: 12px;
+    // display: block;
+
+}
+li:nth-child(even) {
+    transform: rotate(14deg);
+     box-shadow: -10px 10px 8px $color4 inset, 10px -10px 8px $color5 inset;
+
+}
+li:nth-child(odd) {
+     box-shadow: 10px -10px 8px $color4 inset, -10px 10px 8px $color5 inset;
+
+}
+
+li:hover{
+    transform: rotate(0);
+}
+.navbar-custom li.noRotation {
+border: 2px solid $color5;
+    box-shadow: 0 0 0 red;
+    border-radius: 0;
+}
+}//end min-width 992
+
+.navbar-custom li.noRotation {
+    transform: rotate(0);
+    //box-shadow: 10px -10px 8px $color5 inset;
+
+
+
+background-color: $color4;}
+.navbar-custom li.nav-col1 {
+    background-color: $color1;
+}
+
+.navbar-custom li.nav-col1 {
+    background-color: $color1;
+}
+
+.navbar-custom li.nav-col2 {
+    background-color: $color2;
+}
+
+.navbar-custom li.nav-col3 {
+    background-color: $color3;
+}
+
+.navbar-custom li.nav-col4 {
+    background-color: $color4;
+}
+
+.navbar-custom li.nav-col5 {
+    background-color: $color5;
+
+}
+
+.navbar-custom li.nav-col5 a {
+    color: aliceblue !important;
+}
+li{text-align: center;}
+li:hover {
+    background-color: $color4;
+
+}
+
+li:nth-child(even) {
+    // box-shadow: -10px 10px 8px $color4 inset, 10px -10px 8px $color5 inset;
+    // transform: rotate(380deg);
+    transition: 2s ease-in-out;
+}
+
+//li:nth-child(even):hover {
+    // transform: rotate(0deg) scale(1.4);
+    // transform:  scale(1.4);
+
+//}
+
+li:nth-child(odd) {
+//    box-0shadow: -10px 10px 8px $color5 inset, 10px -10px 8px $color4 inset;
+transition: 2s ease-in-out;
+}
+
+li:nth-child(odd):hover {
+    // transform: rotate(360deg) scale(1.4);
+    //   transform:  scale(1.4);
+    
+    // transition: 2s;
+    margin: 0;
+}
+
+element.style {
+    color: red;
+}
+
+/* Modify brand and text color of nav bar */
+
+
+
+
+
+
+
+
+
+
+
+
+
+navbar-brand {
+    width: 300px;
+    height: auto;
+}
+
+.navbar-dark {
+    font-size: 40px;
+}
+
+// li:nth-child(even) {
+//     background-color: aliceblue;
+// transform: rotate(380deg);
+// transition: 2s;
+// }
+.home-title {
+    text-align: center;
+    background-color: $color5;
+    color: aliceblue;
+    border-top: solid 3px $color2;
+}
+
+
+
+/* The animation code */
+@keyframes changeColor1 {
+    0% {
+        background-color: $color5;
+    }
+
+    25% {
+        background-color: $color1;
+    }
+
+    50% {
+        background-color: $color2;
+    }
+
+    100% {
+        background-color: $color4;
+    }
+}
+
+@keyframes changeColor2 {
+    0% {
+        background-color: $color1;
+    }
+
+    50% {
+        background-color: $color2;
+    }
+
+    75% {
+        background-color: $color3;
+    }
+
+    100% {
+        background-color: $color4;
+    }
+
+}
+
+@keyframes changeColor3 {
+    0% {
+        background-color: $color3;
+    }
+
+    25% {
+        background-color: $color4;
+    }
+
+    75% {
+        background-color: $color5;
+    }
+
+    100% {
+        background-color: $color1;
+    }
+
+}
+
+li.changeColor1 {
+    animation: changeColor1 3s ease-in-out;
+
+
+}
+
+li.changeColor2 {
+    animation: changeColor2 3s ease-in-out;
+
+
+}
+
+li.changeColor3 {
+    animation: changeColor3 3s ease-in-out;
+
+
+}
+
+li.changeColor4 {
+    animation: changeColor4 3s ease-in-out;
+
+
+}
+
+li.changeColor5 {
+    animation: changeColor5 3s ease-in-out;
+
+
+}
+
+// carousel style
+
+
+@mixin carousel-item {
+    max-width: 100vh;
+    max-height: 100vh;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.carousel-item .carousel-img-1 {
+    @include carousel-item;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+
+}
+
+.carousel-item .carousel-img-2 {
+    @include carousel-item;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+
+}
+
+.carousel-item .carousel-img-3 {
+    @include carousel-item;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+}
+
+.carousel-item .carousel-img-4 {
+    @include carousel-item;
+    clip-path: polygon(0% 38.31%, 50% 0%, 100% 38.31%, 80.86% 100%, 19.14% 100%);
+}
+.carousel-item .carousel-img-5 {
+    @include carousel-item;
+// transition: 0.4s cubic-bezier(1, -1, 0, 2);
+
+    // transition: 0.4s cubic-bezier(1, -1, 0, 2);
+    // clip-path: polygon(50% 5%, 0% 100%, 100% 100%);
+    animation: 3s down-up;  
+}
+//   .carousel-item .carousel-img-5:hover {
+    // clip-path: polygon(50% 19%, 0 76%, 100% 76%);
+//   }
+
+  
+  @keyframes down-up {
+    0% { clip-path: inset(0 0 100% 0); }
+    50% { clip-path: inset(0); }
+    100% { clip-path: inset(0 0 100% 0); }
+  
+}
+// .carousel-indicators{
+//     list-style: circle;
+
+// }
+.navbar,
+.navbar>.container-xxl {
+    justify-content: space-evenly;
+}
+
+@media (min-width: 576px) {
+    .navbar-expand-sm {
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-expand-md {
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 1400px) {
+    .navbar-expand-xxl {
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+}
+
+.navbar-expand {
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    box-shadow: -2px 2px 2px #888888 inset,
+        2px -2px 2px #888888 inset;
+
+}
